@@ -95,7 +95,7 @@
 									"parameters": {
 										"container": "ingestion",
 										"folder": {
-											"value": "@concat(item().table_name, '.parquet')",
+											"value": "@item().table_schema",
 											"type": "Expression"
 										},
 										"file": {
