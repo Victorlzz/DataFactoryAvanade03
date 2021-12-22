@@ -85,7 +85,7 @@
 									"referenceName": "Json2",
 									"type": "DatasetReference",
 									"parameters": {
-										"container": "container",
+										"container": "ingestion",
 										"folder": {
 											"value": "@item().table_schema",
 											"type": "Expression"
