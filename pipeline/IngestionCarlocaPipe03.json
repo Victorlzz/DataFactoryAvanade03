@@ -22,7 +22,8 @@
 					"dataset": {
 						"referenceName": "MySqlTableCarlocaLocacao03",
 						"type": "DatasetReference"
-					}
+					},
+					"firstRowOnly": false
 				}
 			},
 			{
@@ -39,7 +40,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"items": {
-						"value": "@activity('ListTableCarloca03').output",
+						"value": "@activity('ListTableCarloca03').output.value",
 						"type": "Expression"
 					},
 					"activities": [
