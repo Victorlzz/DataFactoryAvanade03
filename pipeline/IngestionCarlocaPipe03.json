@@ -93,9 +93,12 @@
 									"referenceName": "ParquetCarloca03",
 									"type": "DatasetReference",
 									"parameters": {
-										"folder": "ingestion",
-										"file": "@item().table_schema",
-										"container": {
+										"container": "ingestion",
+										"folder": {
+											"value": "@concat(item().table_name, '.parquet')",
+											"type": "Expression"
+										},
+										"file": {
 											"value": "@concat(item().table_name, '.parquet')",
 											"type": "Expression"
 										}
